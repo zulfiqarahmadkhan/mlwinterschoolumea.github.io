@@ -1,5 +1,59 @@
 <!DOCTYPE html>
 <html lang="en-us">
+<style>
+table.timetable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center; /* center all table content */
+}
+
+table.timetable th {
+    background: #2c3e50;
+    color: #fff;
+    font-size: 16px;
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+}
+
+table.timetable td {
+    padding: 4px 10px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    vertical-align: middle; /* center content vertically */
+}
+
+table.timetable td[colspan="3"] {
+    background: #ecf0f1;  /* highlight break rows */
+    font-weight: normal;   /* remove bold */
+}
+
+.break-row td {
+    background: #fcebd7 !important; /* special highlight */
+    font-weight: normal;  /* remove bold */
+}
+
+.special-text {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Alternating row colors */
+table.timetable tr:nth-child(even) td {
+    background: #f7f9fc;
+}
+
+
+
+
+</style>
+
+
+
+
+
 
 <head>
     <meta charset="utf-8">
@@ -36,10 +90,228 @@
   </h1> -->
                 </header>
 
-                <h1 id="timetable">
-                    Timetable
-                </h1>
-                <p>The Program is under development.</p>  
+                <h1 id="timetable">Timetable</h1>
+
+				<h2>Winter School on Ethical, Legal, and Societal (ELS) aspects of AI and AS, 2026</h2>
+				<p><strong>Umeå, March 11–13, 2026</strong><br>
+				<strong>Venue:</strong> Rotundan, Universum</p>
+
+				<h3 style="text-align: center;">Programme</h3>
+
+
+				<h3>Day 1 — March 11, 2026</h3>
+
+				<table class="timetable">
+				<thead>
+					<tr>
+						<th>Time</th>
+						<th>Topics</th>
+						<th>Remarks</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>11:30–12:00</td>
+						<td>Registration and Welcome</td>
+						<td></td>
+					</tr>
+
+					<!-- LUNCH highlighted -->
+					<tr class="break-row">
+						<td colspan="3">Lunch 12:00–13:00 (Universum)</td>
+					</tr>
+
+					<tr>
+						<td>13:00–14:00</td>
+						<td>
+							Lecture 1: Virginia Dignum &amp; Monowar Bhuyan<br>
+							<span class="special-text">Responsible AI &amp; ML</span>
+						</td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td>14:00–15:30</td>
+						<td>
+							Lecture 2: Kalle Grill<br>
+							<span class="special-text">Alignment with what values?</span>
+						</td>
+						<td></td>
+					</tr>
+
+					<!-- COFFEE BREAK highlighted -->
+					<tr class="break-row">
+						<td colspan="3">Coffee Break 15:30–15:45 (Outside Rotundan)</td>
+					</tr>
+
+					<tr>
+						<td>15:45–17:00</td>
+						<td>
+							Training 1: Mattias and Themis<br>	<span class="special-text">RAI Themis 2.0 (Game)</span><br> 
+						</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<!-- Moved OUTSIDE the table -->
+			<p style="margin-top: 20px;">
+				<span style="font-weight: bold;">Joint dinner and networking:</span> 18:30 - 21:00 at <span style="font-weight: bold;">Orangeriet</span>, Umeå City Centre
+			</p>
+
+
+
+
+			
+			<h3>Day 2 — March 12, 2026</h3>
+
+			<table class="timetable">
+				<thead>
+					<tr>
+						<th>Time</th>
+						<th>Topics</th>
+						<th>Remarks</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>8:15–8:45</td>
+						<td>Registration and announcement</td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td>8:45–10:00</td>
+						<td>
+							Lecture 3: Lena Enqvist<br>
+							<span class="special-text">Between legal and (non)  responsible AI</span>
+						</td>
+						<td></td>
+					</tr>
+
+					<!-- Coffee Break -->
+					<tr class="break-row">
+						<td colspan="3">Coffee Break 10:00–10:15 (Outside Rotundan)</td>
+					</tr>
+
+					<tr>
+						<td>10:15–11:45</td>
+						<td>
+							Lecture 3: Lena Enqvist<br>
+							<span class="special-text">Between legal and (non)responsible AI</span>
+						</td>
+						<td></td>
+					</tr>
+
+					<!-- Lunch -->
+					<tr class="break-row">
+						<td colspan="3">Lunch 11:45–13:00 (Universum)</td>
+					</tr>
+
+					<tr>
+						<td>13:00–13:45</td>
+						<td>
+							Lecture 4: Nina Khairova<br>
+							<span class="special-text">Misinformation</span>
+						</td>
+						<td></td>
+					</tr>
+
+					<!-- Coffee Break -->
+					<tr class="break-row">
+						<td colspan="3">Coffee Break 13:45–14:15 (Outside Rotundan)</td>
+					</tr>
+
+					<tr>
+						<td>14:15–15:00</td>
+						<td>
+							Lecture 5: Lili Jiang<br>
+							<span class="special-text">Fairness</span>
+						</td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td>15:00–16:30</td>
+						<td>
+							Training 2: Tanja<br>
+							<span class="special-text">Q0 Assessment</span>
+						</td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td>16:30–18:30</td>
+						<td> <span style="font-weight: bold;">Posters</span> and snacks</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+			
+			
+
+			<p style="margin-top: 20px;">
+				<span style="font-weight: bold;">Aurora chase:</span> 18:30–21:00 (optional)
+			</p>
+			
+			<h3>Day 3 — March 13, 2026</h3>
+
+			<table class="timetable">
+				<thead>
+					<tr>
+						<th>Time</th>
+						<th>Topics</th>
+						<th>Remarks</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>8:00–8:30</td>
+						<td>Registration and announcement</td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td>8:30–9:45</td>
+						<td>
+							Lecture 6: Leila Meithani<br>
+							<span class="special-text">Explainable AI</span>
+						</td>
+						<td></td>
+					</tr>
+
+					<!-- Coffee Break -->
+					<tr class="break-row">
+						<td colspan="3">Coffee Break 9:45–10:15 (Outside Rotundan)</td>
+					</tr>
+
+					<tr>
+						<td>10:15–11:45</td>
+						<td>
+							Lecture 7: Vicenc Torra<br>
+							<span class="special-text">Data privacy</span>
+						</td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td>11:45–12:00</td>
+						<td>Summary and Closing</td>
+						<td></td>
+					</tr>
+
+					<!-- Lunch -->
+					<tr class="break-row">
+						<td colspan="3">Lunch Break 12:00–13:00 (Universum)</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<div style="height: 250px;"></div>
+
+
+
+
     <!--commented.............  
                 <h3 id="march-11-2026">
                     March 11, 2026
